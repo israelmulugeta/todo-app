@@ -1,0 +1,135 @@
+body{
+    height:100vh;
+    background-image: url(images/bg-desktop-dark.jpg);
+    background-repeat: no-repeat;
+    background-color:  hsl(235, 21%, 11%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.lightBody{
+    background-image: url(images/bg-desktop-light.jpg);
+    background-color: hsl(0, 0%, 98%);
+}
+.TODO{
+    color: whitesmoke;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family:sans-serif;
+    
+}
+.container{
+   /* border: 2px solid white;*/
+    height: 80vh;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+.dragDrop{
+    color:hsl(234, 39%, 85%);
+    margin-bottom: 10vh;
+}
+.lightDragDrop{
+    color:hsl(235, 21%, 11%);
+    margin-bottom: 10vh;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.checked{
+    height: 5vh;
+}
+
+.searchArea{
+    background-color:hsl(233, 14%, 35%) ;
+    display: flex;
+    align-items: center;
+    padding: 0.4vh;
+    padding: 1vh;
+}
+.searchAreaLight{
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    padding: 0.4vh;
+    padding: 1vh;
+  }
+  
+.inputField{
+    height: 5vh;
+    background-color: transparent;
+    border: none;
+    font-size: larger;
+    width: 85%;
+}
+.createButton{
+    height: 100%;
+    border-radius: 10%;
+    background-color:transparent;
+    color: aliceblue;
+    border: none;
+    width: 5vw;
+    font-size: larger;
+    font-family:cursive;
+}
+.createLight{
+    height: 100%;
+    border-radius: 10%;
+    background-color:transparent;
+    color: hsl(233, 14%, 35%);
+    border: none;
+    width: 5vw;
+    font-size: larger;
+    font-family:cursive;
+}
+input[type="text"]:focus {
+    outline: none;
+  }
+
+
+
+@media only screen and (max-width: 600px) {
+    .container
+    {
+       /* border: 2px solid white;*/
+        height: 85vh;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3vh;
+        margin-top: 5vh;
+    }
+    .dragDrop
+    {
+        font-size: x-large;
+        margin-bottom: 5vh;
+    }
+    .TODO
+    {
+        padding-left: 2vh;
+        font-size: 5vh;
+    }
+    #toggler{
+    height: 3vh;
+    }
+
+    .searchArea{
+        height:7vh;
+        padding: 1vh;
+    }
+    .inputField{
+        height: 90%;
+        font-size: xx-large;
+    }
+    .createButton{
+        font-size: x-large;
+    }
+  }

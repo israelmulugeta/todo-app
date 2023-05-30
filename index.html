@@ -6,31 +6,46 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Todo app</title>
+  <title>Todo app</title>
 
+  <link rel="stylesheet" href="style.css">
+  <script src='script.js' defer></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <script src="https://kit.fontawesome.com/7716cceb6a.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <div class="container">
+    <div class="header">
+      <p class="TODO">TODO</p>
+      <img  id="toggler" class="dark" src="images/icon-sun.svg">
+    </div>
 
-  Todo
+    <div class="searchArea">
+      <input type="text" placeholder="Create a new task" class="inputField">
+      <button class="createButton">Create</button>
+    </div>
+    <div class="taskList">
+      <div class="tasks"></div>
+    </div>
+    <div class="summaryArea"></div>
+    
+   
 
-  <!-- Add dynamic number --> items left
 
-  All
-  Active 
-  Completed
 
-  Clear Completed
+  </div>
+  <p id="dragDrop" class="dragDrop">Drag and Drop to reorder list</p>
 
-  Drag and drop to reorder list
 
+<!--
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Israel Mulugeta</a>.
   </div>
+-->    
 </body>
 </html>
