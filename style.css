@@ -1,5 +1,5 @@
 body{
-    height:100vh;
+    height:100%;
     background-image: url(images/bg-desktop-dark.jpg);
     background-repeat: no-repeat;
     background-color:  hsl(235, 21%, 11%);
@@ -23,12 +23,14 @@ body{
 }
 .container{
    /* border: 2px solid white;*/
-    height: 80vh;
+    height: 80%;
     width: 35vw;
     display: flex;
     flex-direction: column;
-    margin-bottom: 5vh;
+    margin-bottom: auto;
     margin-top: 5vh;
+    gap:3vh;
+
 }
 .dragDrop{
     color:hsl(234, 39%, 85%);
@@ -94,14 +96,51 @@ input[type="text"]:focus {
     outline: none;
   }
 
+.tasks{
+    background-color:hsl(233, 14%, 35%) ;
+    display: flex;
+    align-items: center;
+    padding: 0.4vh;
+    padding: 1vh;
+    gap:2vh;
+}
 
+.lightTasks{
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    padding: 0.4vh;
+    padding: 1vh;
+    gap:2vh;
+}
+
+.forImages
+{
+    height:3vh;
+}
+
+.forImages2{
+    height:4vh
+}
+
+.taskText{
+    margin-right: auto;
+    font-size:large;
+    color: antiquewhite;
+}
+
+.lightText{
+    margin-right: auto;
+    font-size:large;
+    color: hsl(235, 21%, 11%);
+}
 
 @media only screen and (max-width: 600px) {
     .container
     {
        /* border: 2px solid white;*/
-        height: 85vh;
-        width: 90vw;
+        height: 85%;
+        width: 80vw;
         display: flex;
         flex-direction: column;
         margin-bottom: 3vh;
@@ -127,9 +166,12 @@ input[type="text"]:focus {
     }
     .inputField{
         height: 90%;
+        width:80%;
         font-size: xx-large;
     }
     .createButton{
         font-size: x-large;
     }
+
+    .taskText{font-size: x-large;}
   }

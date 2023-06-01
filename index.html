@@ -25,12 +25,12 @@
     </div>
 
     <div class="searchArea">
-      <input type="text" placeholder="Create a new task" class="inputField">
-      <button class="createButton">Create</button>
+      <input type="text" placeholder="Create a new task" class="inputField" onkeydown="if (event.keyCode == 13) {
+        document.querySelector('.createButton').click()
+      }">
+      <button class="createButton" type="submit">Create</button>
     </div>
-    <div class="taskList">
-      <div class="tasks"></div>
-    </div>
+    <div class="taskList"></div>
     <div class="summaryArea"></div>
     
    
@@ -38,7 +38,7 @@
 
 
   </div>
-  <p id="dragDrop" class="dragDrop">Drag and Drop to reorder list</p>
+  <div id="dragDrop" class="dragDrop">Drag and Drop to reorder list</div>
 
 
 <!--
