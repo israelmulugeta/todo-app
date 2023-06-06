@@ -8,6 +8,13 @@ let mode='dark';
 
 function toggle()
 {
+    if(mode=='dark')
+    {
+        mode='light';
+    }
+    else {mode='dark'};
+
+
     if(mode=='dark'){
     toggler.classList
         forBody();
@@ -16,14 +23,7 @@ function toggle()
         forInput();
         tasksLightMode();
     }
-        if(mode=='dark')
-        {
-            mode='light';
-        }
-        else mode='dark';
-
-        localStorage.setItem('currentMode',mode);
-        console.log(mode);
+        
     
 }
 
