@@ -15,14 +15,14 @@ function toggle()
     else {mode='dark'};
 
 
-    if(mode=='dark'){
+    
     toggler.classList
         forBody();
         forDragDrop();
         forToggler();
         forInput();
         tasksLightMode();
-    }
+
         
     
 }
